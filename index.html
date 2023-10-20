@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="sr-Latn-RS">
+    <head>
+        <title>Coffee Corner - Vaš novi omiljeni kafić</title>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Coffee Corner - Vaš novi omiljeni kafić. Pogledajte našu ponudu pića i hrane i u svega par klikova rezervišite Vaš sto." />
+        <meta name="keywords" content="kafić, kafa, hrana, piće" />
+        <meta name="author" content="Miloš Milinković" />
+        <!-- css stylesheet -->
+        <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
+        <!-- Font awesome webicons -->
+        <script src="https://kit.fontawesome.com/98bb0aa457.js" crossorigin="anonymous"></script>
+        <!-- Google fonts req -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- Kaushan script and Inter font -->
+        <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kaushan+Script&display=swap" rel="stylesheet">
+        <!-- favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    </head>
+    <body>
+        <!-- Header start -->
+        <header>
+            <div class="center-block">
+                <div id="logo-holder">
+                    <a href="index.html">
+                        <img src="assets/img/logo.png" alt="site-logo" />
+                    </a>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href=""></a>Price List</li>
+                        <li><a href="">Gallery</a></li>
+                        <li><a href="">About Author</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Enterier image holder -->
+        <div id="image-holder">
+            <div id="title-text-holder">
+                <h1>Coffee Corner</h1>
+            </div>
+            <div id="intro-holder">
+                <p>
+                    WELCOME TO SOPHIA'S CAFE'
+                </p>
+                <a href="#reservations">
+                    <div id="res-button">
+                        <i class="fa-sharp fa-solid fa-arrow-down"></i>
+                        <p>RESERVATION</p>
+                        <i class="fa-sharp fa-solid fa-arrow-down"></i>
+                    </div>
+                </a>
+            </div>
+            <div id="welcome-text-holder">
+                <h2>WELCOME!</h2>
+            </div>
+        </div>
+        <!-- Content start -->
+        <div id="drinks-food-container" class="center-block">
+            <a href="cenovnik.html#drinks-menu">
+                <div id="drinks" class="drinks-food-item">
+                    <h3>COFFEE</h3>
+                    <p>Check out our selection of drinks</p>
+                    <!-- Proveri velicinu slika !-->
+                    <img class="drinks-food-image-holder" src="assets/img/drink.png" alt="drink-picture" />
+                </div>
+            </a>
+            <a href="cenovnik.html#food-menu">
+                <div id="food" class="drinks-food-item">
+                    <h3>FOOD</h3>
+                    <p>Check out our selection of FOOD</p>
+                    <img class="drinks-food-image-holder" src="assets/img/food.png" alt="food-picture" />
+                </div>
+            </a>
+        </div>
+        <div class="line"></div>
+        <!-- Location start -->
+        <div id="visit-us">
+            <div class="heading-box">
+                <h3>Visit us at our location !</h3>
+                <h4>Tabunan Borongan City | Working hours : 08:00 - 00:00</h4>
+            </div>
+            <div class="center-block">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2830.6464749533948!2d20.469055500000003!3d44.8083929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a7aa422e4d6a1%3A0xccffbd830f9b8d80!2z0JHRg9C70LXQstCw0YAg0LrRgNCw0ZnQsCDQkNC70LXQutGB0LDQvdC00YDQsCA0NCwg0JHQtdC-0LPRgNCw0LQ!5e0!3m2!1ssr!2srs!4v1677610255262!5m2!1ssr!2srs"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="line"></div>
+        <!-- Reservation start -->
+        <div id="reservations">
+            <div class="heading-box">
+                <h3>Reserve a table in our cafe!</h3>
+                <h4>Quick and easy - choose a free table and time and your table is reserved!</h4>
+            </div>
+            <div id="res-form-holder">
+                <form action="#" method="post">
+                    <div class="res-form-element-container">
+                        <div class="res-form-element-up">
+                            <label for="res-name">To do *</label><br/>
+                            <input type="text" id="res-name" name="res-name" required="required" />
+                        </div>
+                        <div class="res-form-element-up">
+                            <label for="res-last-name">Last name *</label><br/>
+                            <input type="text" id="res-last-name" name="res-last-name" required="required" />
+                        </div>
+                        <div class="res-form-element-up">
+                            <label for="res-last-name">Telephone number *</label><br/>
+                            <input type="text" id="res-phone-number" name="res-phone-number" required="required" />
+                        </div>
+                    </div>
+                    <div class="res-form-element-container">
+                        <div class="res-form-element">
+                            <label for="res-date-time">Times *</label><br/>
+                            <input type="datetime-local" id="res-date-time" name="res-date-time" required="required" />
+                        </div>
+                        <div class="res-form-element">
+                            <label for="res-desks">Sto *</label><br/>
+                            <select id="res-desks" name="res-desks">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div id="res-form-notes-holder">
+                        <label for="res-date-time">Remark</label><br/>
+                        <textarea id="res-notes" name="res-notes"></textarea>
+                    </div>
+                    <div id="res-form-submit-holder">
+                        <input type="submit" value="REZERVIŠI" />
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="line"></div>
+        <!-- Reviews start -->
+        <div id="reviews-section">
+            <div class="heading-box">
+                <h3>Impressions of our guests</h3>
+                <h4>See what our guests have to say about us</h4>
+            </div>
+            <div id="reviews-container" class="center-block">
+                <div class="review">
+                    <div class="review-img-holder">
+                        <img src="assets/img/review1.jpg" alt="review-image-one" />
+                    </div>
+                    <p>
+                        My favorite place in town. Good coffee, pleasant atmosphere and food that is
+                        outstanding. I am always happy to return to Coffee Corner.
+                    </p>
+                </div>
+                <div class="review">
+                    <div class="review-img-holder">
+                        <img src="assets/img/review2.jpg" alt="review-image-two" />
+                    </div>
+                    <p>
+                        I haven't come across a cafe with such a pleasant atmosphere in a long time. Unbelievable
+                        good coffee, very high quality food and really decent prices. Definitely
+                        I will visit him again.
+                    </p>
+                </div>
+                <div class="review">
+                    <div class="review-img-holder">
+                        <img src="assets/img/review3.jpg" alt="review-image-three" />
+                    </div>
+                    <p>
+                        I am a regular guest of this cafe and have been enjoying Sunday breakfast for years
+                        with them and the best coffee. Pleasant atmosphere and very friendly staff
+                        kind and always meet. All the best!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!-- Jump to top button -->
+        <div id="to-top-btn">
+            <a href="#">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+        <!-- Footer start -->
+        <footer>
+            <div class="center-block">
+                <div id="footer-socials">
+                    <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div id="footer-nav-info">
+                    <nav>
+                        <ul>
+                            <li><a class="active" href="index.html">Home</a></li>
+                            <li><a href="cenovnik.html">Price list</a></li>
+                            <li><a href="galerija.html">Gallery</a></li>
+                            <li><a href="o-autoru.html">About the author</a></li>
+                        </ul>
+                    </nav>
+                    <p>Tabunan Borongan city | Working Hours: 08:00 - 00:00</p>
+                    <p id="copyright-text">Copyright &#169; 2023 Miloš Milinković. All Rights Reserved.</p>
+                </div>
+                <div id="rss-sitemap-holder">
+                    <a href="rssfeed.xml" target="_blank"><i class="fa-solid fa-rss"></i></a>
+                    <a href="sitemap.xml" target="_blank"><i class="fa-solid fa-sitemap"></i></a>
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
